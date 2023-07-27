@@ -103,32 +103,23 @@
 
           <!-- navbar-end -->
           <div class="navbar-end">
-              <input class="absolute rounded-full p-3" type="text" name="" id="" placeholder="Search here">
+              <input class="absolute rounded-full outline-none p-3" type="text" name="" id="" placeholder="Search here">
               <button type="submit">
                 <i class="relative  fa-solid fa-magnifying-glass -left-6"></i>
               </button>
           </div>
           
           <!-- drop-down -->
-          <div class="md:hidden md:items-end">
+          <div class="md:hidden md:items-end relative">
             <div class="dropdown">
               <label tabindex="0" class="btn btn-ghost btn-circle">
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h7"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </label>
               <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              class="menu menu-sm dropdown-content  mt-3 z-[1] p-2 shadow bg-base-100 items-center rounded-box w-48 absolute top-10 -left-32">
               <li><a>Home</a></li>
               <li><a>About Us</a></li>
               <li><a>Shop</a></li>
@@ -215,11 +206,9 @@
             <a class="btn  normal-case md:text-xl  font-bold bg-red-500 border-0 text-white">Shop Now</a>
           </div>
         </div>
-
-      
-      
-      
       </div>
+      
+      <!-- fruit container -->
       <div class="hidden lg:flex fruit-container space-x-10 rounded-lg drop-shadow-sm items-center justify-center bg-white max-w-[850px] mx-auto relative -top-16 p-4">
         <!-- fruit 1 -->
         <div>
