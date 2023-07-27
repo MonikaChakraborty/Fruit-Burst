@@ -6,27 +6,18 @@
     <title>Fruit Burst</title>
 
     <!-- Tailwind and Daisy UI -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Lato Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"rel="stylesheet"/>
 
     <!-- font awesome -->
-    <script
-      src="https://kit.fontawesome.com/45800fd468.js"
-      crossorigin="anonymous"
-    ></script>
-
+    <script src="https://kit.fontawesome.com/45800fd468.js" crossorigin="anonymous"></script>
+    
+    <!-- Tailwind custom color -->
     <script>
       tailwind.config = {
         theme: {
@@ -51,7 +42,7 @@
       
       <!-- navbar -->
       <div class="my-10 mx-auto">
-        <div class="navbar bg-[#F85559;] rounded-[600px] p-4">
+        <div class="navbar bg-white md:bg-[#F85559] rounded-[600px] p-4">
 
           <!-- navbar start -->
           <div class="navbar-start">
@@ -63,52 +54,22 @@
                 <li><a>All Fruits</a></li>
               </ul>
             </div>
-
-            <!-- drop-down -->
-            <!-- <div class="md:hidden md:items-end">
-              <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost btn-circle">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h16M4 18h7"
-                    />
-                  </svg>
-                </label>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-                >
-                  <li><a>Home</a></li>
-                  <li><a>About Us</a></li>
-                  <li><a>Shop</a></li>
-                  <li><a>All Fruits</a></li>
-                </ul>
-              </div>
-            </div> -->
           </div>
 
           <!-- navbar-center -->
-          <div class="navbar-center">
-            <a class="btn btn-ghost normal-case text-4xl font-semibold text-white"
+          <div class="f order-first md:order-none lg:order-none">
+            <a class="btn btn-ghost normal-case text-4xl font-semibold text-[#121212] md:text-white "
               ><img class="w-10" src="images/logo.png" alt="" />Fruit Burst</a>
           </div>
 
           <!-- navbar-end -->
-          <div class="navbar-end">
-              <input class="absolute rounded-full outline-none p-3" type="text" name="" id="" placeholder="Search here">
-              <button type="submit">
-                <i class="relative  fa-solid fa-magnifying-glass -left-6"></i>
-              </button>
-          </div>
+          <!-- navbar-end -->
+          <div class="navbar-end invisible lg:visible md:visible">
+            <input class="absolute rounded-full outline-none p-3" type="text" name="" id="" placeholder="Search here">
+            <button type="submit">
+              <i class="relative  fa-solid fa-magnifying-glass -left-6"></i>
+            </button>
+        </div>
           
           <!-- drop-down -->
           <div class="md:hidden md:items-end relative">
@@ -241,37 +202,36 @@
           <p class="text-center">Pomegranates</p>
         </div>
       </div>
-</header>
-
-<main class="container mx-auto">
-  <!-- Deal of the day section starts -->
-  <section class="my-20">
-    <div class="space-y-12">
+    </header>
+    <main class="container mx-auto">
+      <!-- Deal of the day section starts -->
+      <section class="my-20">
+        <div class="space-y-12">
           <!-- deal of the day first section -->
-    <div class="flex flex-col md:flex-row justify-center gap-x-80">
-      <!-- content -->
-      <div class="">
-        <h2 class="text-[#121212] font-extrabold text-5xl mb-4">Deal of the day</h2>
-        <p class="text-[#12121299] font-[500px] text-[16px]">Enjoy the finest range of ripe, delicious mangoes at a special price - Our Deal of the Day, just for you!</p>
-      </div>
-  
-      <!-- count-down -->
-      <div>
-        <div class="grid grid-flow-col gap-2 text-center auto-cols-max mt-5">
-          <div class="flex flex-col">
-            <span class="countdown font-bold text-[#121212] text-5xl">
-              <span style="--value:29;"></span>
-            </span>
-            Days
-          </div>
-          <div class="relative top-3">
-            <img class="" src="images/Frame.svg" alt="">
-          </div> 
-          <div class="flex flex-col">
-            <span class="countdown font-bold text-[#121212] text-5xl">
-              <span style="--value:15;"></span>
-            </span>
-            Hours
+          <div class="flex flex-col md:flex-row justify-center gap-x-20 lg:gap-x-80 md:gap-x-50">
+            <!-- content -->
+            <div class="">
+              <h2 class="text-[#121212] font-extrabold text-5xl mb-4">Deal of the day</h2>
+              <p class="text-[#12121299] font-[500px] text-[16px]">Enjoy the finest range of ripe, delicious mangoes at a special price - Our Deal of the Day, just for you!</p>
+            </div>
+            
+            <!-- count-down -->
+            <div>
+              <div class="grid grid-flow-col gap-2 text-center auto-cols-max mt-5">
+                <div class="flex flex-col">
+                  <span class="countdown font-bold text-[#121212] text-5xl">
+                  <span style="--value:29;"></span>
+                </span>
+                Days
+              </div>
+              <div class="relative top-3">
+                <img class="" src="images/Frame.svg" alt="">
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-bold text-[#121212] text-5xl">
+                <span style="--value:15;"></span>
+              </span>
+              Hours
           </div>
           <div class="relative top-3">
             <img class="" src="images/Frame.svg" alt="">
@@ -501,9 +461,10 @@
    <!-- Meet the team section -->
   </section>
   
+  <!-- meet the team section -->
   <section class="my-20">
     <div class="hero min-h-screen bg-meet-team-bg rounded-lg">
-      <div class="hero-overlay bg-opacity-60 rounded-md"></div>
+      <div class="hero-overlay bg-opacity-75 bg-stone-950 rounded-md"></div>
       <div class="hero-content text-center text-neutral-content">
         <div class="">
           <h1 class="mb-5 text-white text-5xl font-extrabold text-center">Meet the team section</h1>
@@ -551,7 +512,7 @@
 
             <!-- member 4 -->
             <div class="text-center space-y-4">
-              <img class="" src="./images/member4.png" alt="">
+              <img class="mb-8" src="./images/member4.png" alt="">
               <p class="text-2xl text-white font-bold">Chaity</p>
               <p class="text-xl font-[500px] text-white">Fruits Expert</p>
               <div class="flex gap-4 justify-center">
@@ -567,8 +528,177 @@
     </div>
   </section>
 
-  <section></section>
+
+  <!-- why choose us section -->
+  <section class="my-20">
+    <div>
+      <!-- why choose us description -->
+      <div class="text-center">
+        <h2 class="text-[#121212] font-extrabold text-5xl">Why Choose Us</h2>
+          <p class="text-[#12121299] font-[500px] text-lg mt-6">Handpicked and delivered with care, our fruits are bursting with flavor, ensuring a delightful taste in every bite.</p>
+      </div>
+      <div class="grid grid-cols-3 mt-10">
+
+        <!-- column 1 -->
+        <div class="space-y-10">
+          <!-- choose 1 -->
+          <div class="flex">
+            <!-- icon start -->
+            <div class="relative">
+              <img class="max-w-screen-sm" src="images/Ellipse 2.svg" alt="">
+      
+              <img class="absolute top-3 left-4" src="images/group 1.svg" alt="">
+            </div>
+            <!-- icon end -->
+      
+            <div class="ml-4">
+              <h1 class="text-[#121212] font-extrabold text-2xl">Dedicated Team</h1>
+              <hr class="h-0.5 w-28 bg-[#12121219] mt-3 mb-4"> <!-- Horizontal Line -->
+      
+              <p class="text-[#12121299] font-[500px] text-lg">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+        
+          </div>
+      
+          <!-- choose 2 -->
+          <div class="flex">
+            <!-- icon start -->
+            <div class="relative">
+              <img class="max-w-screen-sm" src="images/Ellipse 2.svg" alt="">
+      
+              <img class="absolute top-3 left-4" src="images/group 1.svg" alt="">
+      
+            </div>
+            <!-- icon end -->
+      
+            <div class="ml-4">
+              <h1 class="text-[#121212] font-extrabold text-2xl">Dedicated Team</h1>
+              <hr class="h-0.5 w-28 bg-[#12121219] mt-3 mb-4"> <!-- Horizontal Line -->
+      
+              <p class="text-[#12121299] font-[500px] text-lg">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+        
+          </div>
+
+          <!-- choose 3 -->
+          <div class="flex">
+            <!-- icon start -->
+            <div class="relative">
+              <img class="max-w-screen-sm" src="images/Ellipse 2.svg" alt="">
+      
+              <img class="absolute top-3 left-4" src="images/group 1.svg" alt="">
+      
+            </div>
+            <!-- icon end -->
+      
+            <div class="ml-4">
+              <h1 class="text-[#121212] font-extrabold text-2xl">Dedicated Team</h1>
+              <hr class="h-0.5 w-28 bg-[#12121219] mt-3 mb-4"> <!-- Horizontal Line -->
+      
+              <p class="text-[#12121299] font-[500px] text-lg">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+        
+          </div>
+        </div>
+
+        <!-- column 2 -->
+        <div>
+          <img src="images/whychoose1.png" alt="">
+        </div>
+
+        <!-- column 3 -->
+        <div class="space-y-10">
+          <!-- choose 1 -->
+          <div class="flex">
+            <!-- icon start -->
+            <div class="relative">
+              <img class="max-w-screen-sm" src="images/Ellipse 2.svg" alt="">
+      
+              <img class="absolute top-3 left-4" src="images/group 1.svg" alt="">
+      
+            </div>
+            <!-- icon end -->
+      
+            <div class="ml-4">
+              <h1 class="text-[#121212] font-extrabold text-2xl">Dedicated Team</h1>
+              <hr class="h-0.5 w-28 bg-[#12121219] mt-3 mb-4"> <!-- Horizontal Line -->
+      
+              <p class="text-[#12121299] font-[500px] text-lg">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+        
+          </div>
+      
+          <!-- choose 2 -->
+          <div class="flex">
+            <!-- icon start -->
+            <div class="relative">
+              <img class="max-w-screen-sm" src="images/Ellipse 2.svg" alt="">
+      
+              <img class="absolute top-3 left-4" src="images/group 1.svg" alt="">
+      
+            </div>
+            <!-- icon end -->
+      
+            <div class="ml-4">
+              <h1 class="text-[#121212] font-extrabold text-2xl">Dedicated Team</h1>
+              <hr class="h-0.5 w-28 bg-[#12121219] mt-3 mb-4"> <!-- Horizontal Line -->
+      
+              <p class="text-[#12121299] font-[500px] text-lg">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+        
+          </div>
+
+          <!-- choose 3 -->
+          <div class="flex">
+            <!-- icon start -->
+            <div class="relative">
+              <img class="max-w-screen-sm" src="images/Ellipse 2.svg" alt="">
+      
+              <img class="absolute top-3 left-4" src="images/group 1.svg" alt="">
+      
+            </div>
+            <!-- icon end -->
+      
+            <div class="ml-4">
+              <h1 class="text-[#121212] font-extrabold text-2xl">Dedicated Team</h1>
+              <hr class="h-0.5 w-28 bg-[#12121219] mt-3 mb-4"> <!-- Horizontal Line -->
+      
+              <p class="text-[#12121299] font-[500px] text-lg">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+        
+          </div>
+        </div>
+      </div>
+  </section>
 </main>
-<footer></footer>
+
+<!-- footer -->
+<footer>
+
+  <div class="bg-[#121212] text-center">
+    <div class="pt-32">
+       <a class="btn btn-ghost normal-case text-4xl font-semibold text-[#121212] md:text-white">
+    <img class="w-10" src="images/logo.png" alt="" />Fruit Burst</a>
+    </div>
+   
+    <div class="inline-flex gap-16 text-white font-[600px] text-lg mt-10">
+      <p>Home</p>
+      <p>About Us</p>
+      <p>Shop</p>
+      <p>All Fruits</p>
+      <p>Support</p>
+      <p>My Account</p>
+    </div>
+    <div class="flex justify-center gap-10 mt-16 pb-32">
+      <img src="images/twitter_footer.svg" alt="">
+      <img src="images/facebook_footer.svg" alt="">
+      <img src="images/youtube_footer.svg" alt="">
+      <img src="images/linkedin_footer.svg" alt="">
+      <img src="images/instagram_footer.svg" alt="">
+      <img src="images/apple_footer.svg" alt="">
+    </div>
+  </div>
+  
+</footer>
   </body>
 </html>
